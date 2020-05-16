@@ -115,6 +115,8 @@ if __name__ == '__main__':
             with open('saved_cache.pickle', 'rb') as f:
                 CACHE = pickle.load(f)
                 print("Cache was found")
+                check_cache()
+                print("Cache was updated")
         except IOError:
             print("Cache wasn't found")
         while True:
